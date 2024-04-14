@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_Vizsga_1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="480" Width="850">
     <Grid>
+        <ListBox Name="BListElements" Margin="400,40,35,215"/>
 
+        <Button Name="UjTermek" Content="Új termék" Width="100" Height="30" Margin="400,224,300,180" Click="UjTermek_Click"/>
+        <Button Name="Megvasarlova" Content="Megvásárolva" Width="100" Height="30" Margin="532,224,168,180" Click="Megvasarlova_Click"/>
+        <Button Name="Torles" Content="Törlés" Width="100" Height="30" Margin="665,224,35,180" Click="Torles_Click"/>
+
+        <Label Content="Termék név: " Height="35" Width="100" Margin="10,40,690,359"/>
+        <Label Content="Üzlet: " Height="35" Width="100" Margin="10,80,690,319"/>
+        <Label Content="Megvásárolva: " Height="35" Width="100" Margin="10,120,690,279"/>
+
+        <ComboBox Name="TermekNevCB" Height="35" Width="250" Margin="115,40,435,359"/>
+        <ComboBox Name="UzletCB" Height="35" Width="250" Margin="115,120,435,279"/>
+        <ComboBox Name="MegvasarolvasCB" Height="35" Width="250" Margin="115,80,435,319"/>
+
+        <Button Content="Szűrés" Name="Szures" Height="35" Width="75" Margin="115,217,610,182" Click="Szures_Click"/>
     </Grid>
 </Window>

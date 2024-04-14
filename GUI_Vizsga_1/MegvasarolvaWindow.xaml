@@ -1,0 +1,21 @@
+﻿<Window x:Class="GUI_Vizsga_1.MegvasarolvaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_Vizsga_1"
+        mc:Ignorable="d"
+        Title="MegvasarolvaWindow" Height="500" Width="500">
+    <Grid>
+        <Label Content="Mennyiség: " Height="35" Width="150" Margin="0,83,303,316"/>
+        <Label Content="Megvan: " Height="35" Width="150" Margin="0,123,303,276"/>
+        <Label Content="Megjegyzés: " Height="35" Width="150" Margin="0,164,303,235"/>
+
+        <TextBox Name="Mennyiseg" Height="35" Width="150" Margin="150,83,148,316"/>
+        <CheckBox Name="Megvan_e" Height="35" Width="150" Margin="150,123,148,276"/>
+        <TextBox Name="Megjegyzes" Height="150" Width="150" Margin="150,163,148,121"/>
+
+        <Button Name="Mentes" Content="Mentés" Width="60" Height="35" Margin="150,327,238,72"/>
+        <Button Name="Megse" Content="Mégse" Width="60" Height="35" Margin="200,327,148,72"/>
+    </Grid>
+</Window>
